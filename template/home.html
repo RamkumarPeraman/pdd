@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="generator" content="Hugo 0.112.5">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+
+<body> 
+    <div id="header"></div>
+    <div class="img">
+    <div class="fift">
+        <h4>Let's Find The Best Path To Reach Your Destination</h4><br>
+        <div class="card arrange" style="margin-top:100px;">
+            <form>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">From</label>
+                    <input class="form-control" type="text" id="formFile">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">TO</label>
+                    <input class="form-control" type="text" id="formFileMultiple" multiple>
+                  </div>
+                  <button type="button" class="btn btn-primary">Search</button>
+
+            </form>
+        </div>
+
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+<style>
+   
+    .arrange{
+        width: 28rem;
+        height:20rem;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        padding:50px;
+        border-radius: 30px;
+        background-color: antiquewhite;
+
+    }
+    .fift{
+        margin-left:500px;
+        
+        
+         /* Set the width of your div */
+       
+       
+
+    }
+    button{
+        margin-left: 125px;
+    }
+    h4{
+        font-weight: bold;
+        color: #ff0808;
+    }
+    .img{
+        
+        height: 90vh;
+        background-image: url('pdd.jpg'); /* Replace 'your-image-url.jpg' with your image file path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    
+  
+    
+</style>
+<script>
+    // Fetch and insert header content using JavaScript
+    fetch('header.html')
+        .then(response => response.text())
+        .then(headerContent => {
+            document.querySelector('#header').innerHTML = headerContent;
+        });
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(headerContent => {
+        document.querySelector('#footer').innerHTML = headerContent;
+    });
+</script>
+</html>
